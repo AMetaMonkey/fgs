@@ -1,10 +1,10 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Lucida Sans';
+    font-family: monospace;
     }
 .header {
-    background-color: #2D3142;
+    background-color: #476930;
     color: white;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.95;
+    opacity: 1;
 }
 .para1 {
     background-image: url("./images/scarifier.jpg");
@@ -29,20 +29,41 @@ body {
 
 .about {
     display: flex;
+    color:white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    background-color:white;
+    width: 60%;
     padding:12px;
     border-radius: 5%;
-    opacity: 80%;
+    opacity: 100%;
     text-align: center;
 }
 
 .info {
-    padding: 42px;
+    padding: 48px;
     text-align: center;
+    background-color: #476930;
+    color: white;
+}
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*padding: 88px;*/
+    padding: 10%;
+    flex-direction: row;
+    gap:48px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    border-color: gray;
+    border-style: outset;
+    border-radius: 10%;
 }
 
 .para2 {
@@ -58,7 +79,10 @@ body {
 }
 
 .footer {
-    background-color: #2D3142;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    background-color: #476930;
     color: white;
     display: flex;
     padding: 12px;
